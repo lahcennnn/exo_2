@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap');
+*
+{
+    color: rgb(238, 234, 234);
+   
+}
+
+
+#site-vente
+{
+    color: white;
+    padding:  32px ;
+    width: 1600px;
+    margin:auto;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif ;
+}
+#clothing-accesosies 
+{   
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px ;
+    row-gap: 32px;
+    margin-bottom: 32px;
+    font-size: 40px ;
+}
+#clothing-accesosies > * { 
+    height: 423px;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+#clothing-accesosies .numéro {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+.numéro {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: chocolate;  
+}
+#clothing-accesosies > p {   
+    text-align: center;
+}
+#Accessories 
+{
+    background-image: url('img/accessories.jpg');
+}
+#clothings 
+{
+    background-image: url('img/clothings.jpg');   
+}
+#Vente-Chrono 
+{
+    background-image: url('img/sale_starts_in.jpg');
+    height: 525px;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: 50px ;
+}
+#Vente-Chrono > p 
+{ 
+    text-align: center;
+    font-size: 200px;
+
+
+}
+
+#Vente-Chrono hr 
+{ 
+    width: 50px;
+    margin: 0 auto;
+} 
+#chnono
+{
+    display:flex;
+    justify-content: center;
+    column-gap: 64px;
+   
+}  
+#chnono p:first-child {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+#chnono p:last-child {
+    font-size: 5px;
+    text-align: center;   
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    #clothing-accesosies {
+        flex-direction: row;
+    }
+
+    #Vente-Chrono > p {
+        font-size: 32px;
+    }
+
+    #chnono {
+        column-gap: 16px;
+    }
+
+    #chnono p:first-child {
+        font-size: 16px;
+    }
+
+    #chnono p:last-child {
+        font-size: 6px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+    #chnono {
+        column-gap: 64px;
+    }
+    
+    #chnono p:first-child {
+        font-size: 64px;
+    }
+
+    #chnono p:last-child {
+        font-size: 32px;
+    }
+}
